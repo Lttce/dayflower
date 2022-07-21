@@ -1,3 +1,3 @@
 # Dayflower
 
-Try python backend using FastApi.
+Python backend using FastApi.
