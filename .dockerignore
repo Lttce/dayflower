@@ -1,0 +1,10 @@
+./.git/
+./.pytest_cache/
+
+./tests/
+./dist/
+
+./README.md
+./Makefile
+./Dockerfile
+./docker-compose.yml
