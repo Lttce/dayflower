@@ -3,7 +3,7 @@ all:
 
 .PHONY: dev
 dev:
-	poetry run uvicorn app.main:api --reload
+	poetry run uvicorn dayflower.main:api --reload
 
 .PHONY: test
 test:
