@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from psycopg2.extras import RealDictCursor
-import db.connection as db
+import db.util
 
 
 api = FastAPI()
@@ -13,7 +13,7 @@ def read_root():
 
 @api.get("/users")
 async def read_users():
-    with db.get_connection() as conn:
+    with db.util.get_connection() as conn:
         with conn.cursor("all", cursor_factory=RealDictCursor) as cur:
             cur.execute("select * from users;")
             all_row = cur.fetchall()
