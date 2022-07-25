@@ -10,17 +10,10 @@ Python backend using FastApi.
 ### Requirements
 
 - poetry
+- Docker
 
-### Setup
-
-1. install dependencies
-
-```
-poetry install
-```
-
-2. launch the dev server
+1. launch the dev server
 
 ```
-make dev
+docker compose up
 ```
