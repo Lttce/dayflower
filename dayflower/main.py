@@ -18,3 +18,8 @@ async def get_users():
             cur.execute("select * from users;")
             all_row = cur.fetchall()
     return all_row
+
+
+@api.post("/api/v1/user/")
+async def add_user():
+    pass
